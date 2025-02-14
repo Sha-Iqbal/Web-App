@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -11,3 +12,16 @@
         </article>
     {% endfor %}
 {% endblock %}
+=======
+<header>
+    <h1><a href="/">Shahreen's Blog</a></h1>
+</header>
+
+{% for post in posts %}
+    <article>
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endfor %}
+>>>>>>> c5faf7c4f9db0be1c930c55df8c8301c9a5ce138
